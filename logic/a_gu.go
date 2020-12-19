@@ -43,6 +43,8 @@ func saveStockList2CSV(stockList string, file string) (err error) {
 	if err != nil {
 		return err
 	}
+	_ ,_= f.WriteString("\xEF\xBB\xBF")
+
 	defer f.Close()
 	fw := csv.NewWriter(f)
 
