@@ -6,11 +6,11 @@ import "github.com/mx5566/pagpiao/logic"
 func main() {
 
 	var err error
-	err = logic.GetStockListA("e:\\sseA.csv")
+	err = logic.GetStockListA(".\\sseA.csv")
 	if err != nil {
 		log.Fatal(err)
 	}
-	err = logic.GetStockListB("e:\\sseB.csv")
+	err = logic.GetStockListB(".\\sseB.csv")
 	if err != nil {
 		log.Fatal(err)
 	}

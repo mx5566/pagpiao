@@ -35,6 +35,8 @@ func GetStockListB(saveFile string) (err error) {
 }
 func saveStockList2CSV(stockList string, file string) (err error) {
 
+	//fmt.Println(stockList)
+
 	vals := strings.Split(stockList, "\n")
 
 	f, err := os.Create(file)
